@@ -7,9 +7,8 @@ for _ in range(N) :
     
 for _ in range(M) :
     outsider_see = sys.stdin.readline()
-    if outsider_see in outsider_hear :
+    if outsider_hear.find(outsider_see) :
         result.append(outsider_see)
-
-#result.sort()
+result.sort()
 for i in range(len(result)) :
     print(result[i],end=' ')
